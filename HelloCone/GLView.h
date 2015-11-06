@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GLView.h
 //  HelloCone
 //
 //  Created by Evghenii Nicolaev on 11/6/15.
@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "GLESViewProtocol.h"
 
-@interface ViewController : UIViewController
-@property (nonatomic, strong) UIView<GLESViewProtocol> *view;
-@end
+@interface GLView : UIView <GLESViewProtocol> {
+    GLuint renderBuffer;
+    GLuint frameBuffer;
+}
 
+@end

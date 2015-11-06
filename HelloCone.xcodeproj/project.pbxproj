@@ -13,6 +13,12 @@
 		47E1B2581BECF25C0092D2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E1B2561BECF25C0092D2BF /* Main.storyboard */; };
 		47E1B25A1BECF25C0092D2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E1B2591BECF25C0092D2BF /* Assets.xcassets */; };
 		47E1B25D1BECF25C0092D2BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E1B25B1BECF25C0092D2BF /* LaunchScreen.storyboard */; };
+		47E1B2681BECF2880092D2BF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B2671BECF2880092D2BF /* OpenGLES.framework */; };
+		47E1B26A1BECF28E0092D2BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E1B2691BECF28E0092D2BF /* QuartzCore.framework */; };
+		47E1B26D1BECF2B70092D2BF /* GLESOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B26C1BECF2B70092D2BF /* GLESOneView.m */; };
+		47E1B2741BECF33C0092D2BF /* GLESTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B2731BECF33C0092D2BF /* GLESTwoView.m */; };
+		47E1B2771BECFB1F0092D2BF /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B2761BECFB1F0092D2BF /* GLView.m */; };
+		47E1B27B1BED05370092D2BF /* SquareLesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B27A1BED05370092D2BF /* SquareLesson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,20 @@
 		47E1B2591BECF25C0092D2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E1B25C1BECF25C0092D2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47E1B25E1BECF25C0092D2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E1B2671BECF2880092D2BF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		47E1B2691BECF28E0092D2BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		47E1B26B1BECF2B70092D2BF /* GLESOneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESOneView.h; sourceTree = "<group>"; };
+		47E1B26C1BECF2B70092D2BF /* GLESOneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESOneView.m; sourceTree = "<group>"; };
+		47E1B2711BECF2DA0092D2BF /* GLESViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESViewProtocol.h; sourceTree = "<group>"; };
+		47E1B2721BECF33C0092D2BF /* GLESTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESTwoView.h; sourceTree = "<group>"; };
+		47E1B2731BECF33C0092D2BF /* GLESTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESTwoView.m; sourceTree = "<group>"; };
+		47E1B2751BECFB1F0092D2BF /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		47E1B2761BECFB1F0092D2BF /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		47E1B2791BED05370092D2BF /* SquareLesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareLesson.h; sourceTree = "<group>"; };
+		47E1B27A1BED05370092D2BF /* SquareLesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareLesson.m; sourceTree = "<group>"; };
+		47E1B27F1BED05890092D2BF /* LessonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonProtocol.h; sourceTree = "<group>"; };
+		47E1B2801BED07130092D2BF /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		47E1B2811BED07530092D2BF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E1B26A1BECF28E0092D2BF /* QuartzCore.framework in Frameworks */,
+				47E1B2681BECF2880092D2BF /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,9 @@
 		47E1B2411BECF25C0092D2BF = {
 			isa = PBXGroup;
 			children = (
+				47E1B2811BED07530092D2BF /* PrefixHeader.pch */,
+				47E1B2691BECF28E0092D2BF /* QuartzCore.framework */,
+				47E1B2671BECF2880092D2BF /* OpenGLES.framework */,
 				47E1B24C1BECF25C0092D2BF /* HelloCone */,
 				47E1B24B1BECF25C0092D2BF /* Products */,
 			);
@@ -58,10 +83,19 @@
 		47E1B24C1BECF25C0092D2BF /* HelloCone */ = {
 			isa = PBXGroup;
 			children = (
+				47E1B2781BED050E0092D2BF /* Lessons */,
 				47E1B2501BECF25C0092D2BF /* AppDelegate.h */,
 				47E1B2511BECF25C0092D2BF /* AppDelegate.m */,
 				47E1B2531BECF25C0092D2BF /* ViewController.h */,
 				47E1B2541BECF25C0092D2BF /* ViewController.m */,
+				47E1B2711BECF2DA0092D2BF /* GLESViewProtocol.h */,
+				47E1B26B1BECF2B70092D2BF /* GLESOneView.h */,
+				47E1B26C1BECF2B70092D2BF /* GLESOneView.m */,
+				47E1B2721BECF33C0092D2BF /* GLESTwoView.h */,
+				47E1B2731BECF33C0092D2BF /* GLESTwoView.m */,
+				47E1B2751BECFB1F0092D2BF /* GLView.h */,
+				47E1B2761BECFB1F0092D2BF /* GLView.m */,
+				47E1B2801BED07130092D2BF /* Constants.h */,
 				47E1B2561BECF25C0092D2BF /* Main.storyboard */,
 				47E1B2591BECF25C0092D2BF /* Assets.xcassets */,
 				47E1B25B1BECF25C0092D2BF /* LaunchScreen.storyboard */,
@@ -77,6 +111,32 @@
 				47E1B24E1BECF25C0092D2BF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47E1B2781BED050E0092D2BF /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+				47E1B27F1BED05890092D2BF /* LessonProtocol.h */,
+				47E1B27C1BED053A0092D2BF /* GLES 1 */,
+				47E1B27D1BED053F0092D2BF /* GLES 2 */,
+			);
+			name = Lessons;
+			sourceTree = "<group>";
+		};
+		47E1B27C1BED053A0092D2BF /* GLES 1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "GLES 1";
+			sourceTree = "<group>";
+		};
+		47E1B27D1BED053F0092D2BF /* GLES 2 */ = {
+			isa = PBXGroup;
+			children = (
+				47E1B2791BED05370092D2BF /* SquareLesson.h */,
+				47E1B27A1BED05370092D2BF /* SquareLesson.m */,
+			);
+			name = "GLES 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E1B2741BECF33C0092D2BF /* GLESTwoView.m in Sources */,
+				47E1B26D1BECF2B70092D2BF /* GLESOneView.m in Sources */,
 				47E1B2551BECF25C0092D2BF /* ViewController.m in Sources */,
 				47E1B2521BECF25C0092D2BF /* AppDelegate.m in Sources */,
+				47E1B27B1BED05370092D2BF /* SquareLesson.m in Sources */,
 				47E1B24F1BECF25C0092D2BF /* main.m in Sources */,
+				47E1B2771BECFB1F0092D2BF /* GLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = HelloCone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.HelloCone;
@@ -274,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = HelloCone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.HelloCone;
@@ -300,6 +366,7 @@
 				47E1B2631BECF25C0092D2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

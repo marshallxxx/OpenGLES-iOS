@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  HelloCone
+//
+//  Created by Evghenii Nicolaev on 11/6/15.
+//  Copyright © 2015 Evghenii Nicolaev. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Constants.h"
+
+#endif /* PrefixHeader_pch */

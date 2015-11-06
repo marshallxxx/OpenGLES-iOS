@@ -8,11 +8,36 @@
 
 #import "ViewController.h"
 
+#import "GLESOneView.h"
+#import "GLESTWOView.h"
+
+#import "LessonProtocol.h"
+#import "SquareLesson.h"
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+@dynamic view;
+
+- (void)loadView {
+    
+    Class lesson = [SquareLesson class];
+    
+    [lesson preconfig];
+    
+    CGRect windowRect = [[UIScreen mainScreen] bounds];
+    
+#ifdef OPENGLES1
+    self.view = [[GLESOneView alloc] initWithFrame:windowRect];
+#else 
+    self.view = [[GLESTwoView alloc] initWithFrame:windowRect];
+#endif
+    
+    [lesson startLessonWithView:(GLView *)self.view];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
