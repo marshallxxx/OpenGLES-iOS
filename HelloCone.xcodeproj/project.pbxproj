@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47988C2A1BF20EBE00309193 /* Simple.vert in Resources */ = {isa = PBXBuildFile; fileRef = 47988C291BF20EBE00309193 /* Simple.vert */; };
+		47988C2C1BF20EC500309193 /* Simple.frag in Resources */ = {isa = PBXBuildFile; fileRef = 47988C2B1BF20EC500309193 /* Simple.frag */; };
+		47988C2F1BF20FED00309193 /* ShadersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 47988C2E1BF20FED00309193 /* ShadersBuilder.m */; };
 		47E1B24F1BECF25C0092D2BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B24E1BECF25C0092D2BF /* main.m */; };
 		47E1B2521BECF25C0092D2BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B2511BECF25C0092D2BF /* AppDelegate.m */; };
 		47E1B2551BECF25C0092D2BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E1B2541BECF25C0092D2BF /* ViewController.m */; };
@@ -22,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47988C291BF20EBE00309193 /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.vert; sourceTree = "<group>"; };
+		47988C2B1BF20EC500309193 /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		47988C2D1BF20FED00309193 /* ShadersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadersBuilder.h; sourceTree = "<group>"; };
+		47988C2E1BF20FED00309193 /* ShadersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadersBuilder.m; sourceTree = "<group>"; };
 		47E1B24A1BECF25C0092D2BF /* HelloCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E1B24E1BECF25C0092D2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47E1B2501BECF25C0092D2BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +68,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47988C281BF20EA500309193 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				47988C2D1BF20FED00309193 /* ShadersBuilder.h */,
+				47988C2E1BF20FED00309193 /* ShadersBuilder.m */,
+				47988C291BF20EBE00309193 /* Simple.vert */,
+				47988C2B1BF20EC500309193 /* Simple.frag */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
 		47E1B2411BECF25C0092D2BF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +101,7 @@
 		47E1B24C1BECF25C0092D2BF /* HelloCone */ = {
 			isa = PBXGroup;
 			children = (
+				47988C281BF20EA500309193 /* Shaders */,
 				47E1B2781BED050E0092D2BF /* Lessons */,
 				47E1B2501BECF25C0092D2BF /* AppDelegate.h */,
 				47E1B2511BECF25C0092D2BF /* AppDelegate.m */,
@@ -196,6 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47988C2C1BF20EC500309193 /* Simple.frag in Resources */,
+				47988C2A1BF20EBE00309193 /* Simple.vert in Resources */,
 				47E1B25D1BECF25C0092D2BF /* LaunchScreen.storyboard in Resources */,
 				47E1B25A1BECF25C0092D2BF /* Assets.xcassets in Resources */,
 				47E1B2581BECF25C0092D2BF /* Main.storyboard in Resources */,
@@ -213,6 +234,7 @@
 				47E1B26D1BECF2B70092D2BF /* GLESOneView.m in Sources */,
 				47E1B2551BECF25C0092D2BF /* ViewController.m in Sources */,
 				47E1B2521BECF25C0092D2BF /* AppDelegate.m in Sources */,
+				47988C2F1BF20FED00309193 /* ShadersBuilder.m in Sources */,
 				47E1B27B1BED05370092D2BF /* SquareLesson.m in Sources */,
 				47E1B24F1BECF25C0092D2BF /* main.m in Sources */,
 				47E1B2771BECFB1F0092D2BF /* GLView.m in Sources */,

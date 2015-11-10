@@ -12,6 +12,7 @@
 @interface GLView : UIView <GLESViewProtocol> {
     GLuint renderBuffer;
     GLuint frameBuffer;
+    GLuint depthBuffer;
 }
 
 @end

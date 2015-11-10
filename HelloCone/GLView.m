@@ -10,7 +10,7 @@
 
 @implementation GLView
 
-@synthesize context = _context;
+@synthesize context = _context, delegate =_delegate;
 
 + (Class)layerClass {
     return [CAEAGLLayer class];

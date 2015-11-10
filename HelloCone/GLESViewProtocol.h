@@ -28,6 +28,7 @@
 - (void)setupContext;
 - (void)setupRenderBuffer;
 - (void)setupFrameBuffer;
+- (void)setupDepthBuffer;
 - (void)setupDisplayLink;
 - (void)render;
 

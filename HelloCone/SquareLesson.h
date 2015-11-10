@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <OpenGLES/ES2/gl.h>
 #import "LessonProtocol.h"
 
-@interface SquareLesson : NSObject <LessonProtocol>
+@interface SquareLesson : NSObject <LessonProtocol, OpenGLESViewDelegate> {
+    GLuint programHandle;
+    int positionAttribute;
+}
 
 @end

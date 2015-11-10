@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "GLESViewProtocol.h"
+#import "LessonProtocol.h"
 
 @interface ViewController : UIViewController
 @property (nonatomic, strong) UIView<GLESViewProtocol> *view;
+@property (nonatomic, strong) id<LessonProtocol> activeLesson;
 @end
 

@@ -11,7 +11,6 @@
 #import "GLESOneView.h"
 #import "GLESTWOView.h"
 
-#import "LessonProtocol.h"
 #import "SquareLesson.h"
 
 @interface ViewController ()
@@ -26,17 +25,15 @@
     
     Class lesson = [SquareLesson class];
     
-    [lesson preconfig];
-    
     CGRect windowRect = [[UIScreen mainScreen] bounds];
     
-#ifdef OPENGLES1
-    self.view = [[GLESOneView alloc] initWithFrame:windowRect];
-#else 
-    self.view = [[GLESTwoView alloc] initWithFrame:windowRect];
-#endif
+    if ([lesson glesVersionUse] == GLES_VERSION_1) {
+        self.view = [[GLESOneView alloc] initWithFrame:windowRect];
+    } else {
+        self.view = [[GLESTwoView alloc] initWithFrame:windowRect];
+    }
     
-    [lesson startLessonWithView:(GLView *)self.view];
+    self.activeLesson = [lesson startLessonWithView:(GLView *)self.view];
 }
 
 - (void)viewDidLoad {

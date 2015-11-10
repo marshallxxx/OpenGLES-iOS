@@ -9,10 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "GLView.h"
 
+typedef enum {
+    GLES_VERSION_1,
+    GLES_VERSION_2
+} GLES_VERSION;
+
 @protocol LessonProtocol <NSObject>
 
 @required
-+ (void)preconfig;
-+ (void)startLessonWithView:(GLView *) openGLView;
+@property (nonatomic, strong) GLView *glView;
++ (GLES_VERSION)glesVersionUse;
++ (instancetype)startLessonWithView:(GLView *) openGLView;
 
 @end

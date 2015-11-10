@@ -41,9 +41,17 @@
     
 }
 
+- (void)setupDepthBuffer {
+    glGenRenderbuffers(1, &depthBuffer);
+    glBindRenderbuffer(GL_DEPTH_ATTACHMENT, depthBuffer);
+    
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, depthBuffer);
+}
+
 - (void)render {
-    glClearColor(1.0, 0.0, 0.0, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+    if (self.delegate != nil) {
+        [self.delegate render];
+    }
     
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
 }
