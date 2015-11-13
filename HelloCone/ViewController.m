@@ -11,7 +11,11 @@
 #import "GLESOneView.h"
 #import "GLESTWOView.h"
 
+#import "CubeLessonOES.h"
 #import "SquareLesson.h"
+#import "CubeLesson.h"
+#import "CubeMotionRotationLesson.h"
+#import "CubeAnimation.h"
 
 @interface ViewController ()
 
@@ -23,7 +27,7 @@
 
 - (void)loadView {
     
-    Class lesson = [SquareLesson class];
+    Class lesson = [ACTIVELESSON class];
     
     CGRect windowRect = [[UIScreen mainScreen] bounds];
     
@@ -39,6 +43,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    glViewport(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
 }
 
 - (void)didReceiveMemoryWarning {

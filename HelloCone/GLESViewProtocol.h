@@ -11,7 +11,11 @@
 
 @protocol OpenGLESViewDelegate <NSObject>
 
+@required
 - (void)render;
+
+@optional
+- (void) updateAnimation:(float) timestamp;
 
 @end
 
@@ -30,6 +34,6 @@
 - (void)setupFrameBuffer;
 - (void)setupDepthBuffer;
 - (void)setupDisplayLink;
-- (void)render;
+- (void)render:(CADisplayLink *) displayLink;
 
 @end

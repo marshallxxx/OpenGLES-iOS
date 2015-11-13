@@ -25,6 +25,8 @@
         [self setupFrameBuffer];
         [self setupDisplayLink];
         
+        m_timestamp = 0;
+        
     }
     return self;
 }
@@ -49,12 +51,17 @@
     exit(EXIT_FAILURE);
 }
 
+- (void)setupDepthBuffer {
+    NSLog(@"Class is abstract should rewrite method: setupDepthBuffer");
+    exit(EXIT_FAILURE);
+}
+
 - (void)setupDisplayLink {
-    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(render)];
+    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];
     [link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
-- (void)render {
+- (void)render:(CADisplayLink *) displayLink {
     NSLog(@"Class is abstract should rewrite method: render");
     exit(EXIT_FAILURE);
 }

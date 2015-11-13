@@ -13,6 +13,8 @@
     GLuint renderBuffer;
     GLuint frameBuffer;
     GLuint depthBuffer;
+    
+    float m_timestamp;
 }
 
 @end

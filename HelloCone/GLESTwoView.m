@@ -10,13 +10,6 @@
 
 @implementation GLESTwoView
 
-- (instancetype)initWithFrame:(CGRect) frame {
-    if (self = [super initWithFrame:frame]) {
-        
-    }
-    return self;
-}
-
 - (void)setupContext {
     self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
@@ -43,13 +36,29 @@
 
 - (void)setupDepthBuffer {
     glGenRenderbuffers(1, &depthBuffer);
-    glBindRenderbuffer(GL_DEPTH_ATTACHMENT, depthBuffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, depthBuffer);
+    
+    CGRect screenRect = [UIScreen mainScreen].bounds;
+    
+    glRenderbufferStorage(GL_RENDERBUFFER,
+                          GL_DEPTH_COMPONENT16,
+                          screenRect.size.width,
+                          screenRect.size.height);
     
     glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, depthBuffer);
+    
+    glBindRenderbuffer(GL_RENDERBUFFER, renderBuffer);
+    
+    glEnable(GL_DEPTH_TEST);
 }
 
-- (void)render {
+- (void)render:(CADisplayLink *) displayLink {
     if (self.delegate != nil) {
+        if ([self.delegate respondsToSelector:@selector(updateAnimation:)]) {
+            float elapsedSeconds = displayLink.timestamp - m_timestamp;
+            m_timestamp = displayLink.timestamp;
+            [self.delegate updateAnimation:elapsedSeconds];
+        }
         [self.delegate render];
     }
     

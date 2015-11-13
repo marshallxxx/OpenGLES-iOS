@@ -11,6 +11,8 @@
 
 #import <OpenGLES/ES2/gl.h>
 
-@interface GLESTwoView : GLView <GLESViewProtocol>
+@interface GLESTwoView : GLView <GLESViewProtocol> {
+    
+}
 
 @end

@@ -39,12 +39,27 @@
 }
 
 - (void)setupDepthBuffer {
+    glGenRenderbuffersOES(1, &depthBuffer);
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthBuffer);
     
+    CGRect screenRect = [UIScreen mainScreen].bounds;
+    
+    glRenderbufferStorageOES(GL_RENDERBUFFER_OES,
+                          GL_DEPTH_COMPONENT16_OES,
+                          screenRect.size.width,
+                          screenRect.size.height);
+    
+    glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_DEPTH_ATTACHMENT_OES, GL_RENDERBUFFER_OES, depthBuffer);
+    
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, renderBuffer);
+    
+    glEnable(GL_DEPTH_TEST);
 }
 
-- (void)render {
-    glClearColor(0.5, 0.5, 0.5, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+- (void)render:(CADisplayLink *) displayLink {
+    if (self.delegate != nil) {
+        [self.delegate render];
+    }
     
     [self.context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }

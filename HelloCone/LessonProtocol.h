@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GLView.h"
+#import "GLHelperStructs.h"
 
 typedef enum {
     GLES_VERSION_1,
