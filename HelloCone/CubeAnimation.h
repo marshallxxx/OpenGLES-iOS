@@ -14,6 +14,8 @@
     GLuint programHandle;
     GLint positionAttribute;
     GLint colorAttribute;
+    GLuint vertexBuffer;
+    GLuint indexBuffer;
 }
 
 

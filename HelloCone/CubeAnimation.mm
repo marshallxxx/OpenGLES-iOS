@@ -53,9 +53,21 @@ struct AnimationCircle {
     lesson->positionAttribute = glGetAttribLocation(lesson->programHandle, "Position");
     lesson->colorAttribute = glGetAttribLocation(lesson->programHandle, "SourceColor");
     
+    [lesson initializeVBOs];
     [lesson initiateAnimation];
     
     return lesson;
+}
+
+- (void)initializeVBOs {
+    glGenBuffers(1, &vertexBuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), &cubeVertices[0], GL_STATIC_DRAW);
+    
+    glGenBuffers(1, &indexBuffer);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(cubeIndexes), &cubeIndexes[0], GL_STATIC_DRAW);
+    
 }
 
 - (void)initiateAnimation {
@@ -139,11 +151,13 @@ float QuadraticEaseIn(float t, float start, float end)
     
     for (int i = 0; i < cubeIndexCount / 6; i++) {
         
-        glVertexAttribPointer(positionAttribute, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, &cubeVertices);
+        glVertexAttribPointer(positionAttribute, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, 0);
         Color4f color = sidesColors[i];
         glVertexAttrib4f(colorAttribute, color.R, color.G, color.B, color.A);
         
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_BYTE, &cubeIndexes[6*i]);
+        int ioff = i * 6;
+        const GLvoid* offset = (GLvoid*) ioff;
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_BYTE, offset);
         
     }
     

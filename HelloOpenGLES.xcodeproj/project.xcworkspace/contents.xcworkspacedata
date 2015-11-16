@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HelloCone.xcodeproj">
+      location = "self:/Users/enicolaev/Documents/HelloCone/HelloOpenGLES.xcodeproj">
    </FileRef>
 </Workspace>

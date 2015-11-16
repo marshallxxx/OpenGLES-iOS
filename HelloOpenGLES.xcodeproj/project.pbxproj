@@ -43,7 +43,7 @@
 		47988C2B1BF20EC500309193 /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
 		47988C2D1BF20FED00309193 /* ShadersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadersBuilder.h; sourceTree = "<group>"; };
 		47988C2E1BF20FED00309193 /* ShadersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadersBuilder.m; sourceTree = "<group>"; };
-		47E1B24A1BECF25C0092D2BF /* HelloCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E1B24A1BECF25C0092D2BF /* HelloOpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloOpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E1B24E1BECF25C0092D2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47E1B2501BECF25C0092D2BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47E1B2511BECF25C0092D2BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		47E1B24B1BECF25C0092D2BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47E1B24A1BECF25C0092D2BF /* HelloCone.app */,
+				47E1B24A1BECF25C0092D2BF /* HelloOpenGLES.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,9 +224,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47E1B2491BECF25C0092D2BF /* HelloCone */ = {
+		47E1B2491BECF25C0092D2BF /* HelloOpenGLES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47E1B2611BECF25C0092D2BF /* Build configuration list for PBXNativeTarget "HelloCone" */;
+			buildConfigurationList = 47E1B2611BECF25C0092D2BF /* Build configuration list for PBXNativeTarget "HelloOpenGLES" */;
 			buildPhases = (
 				47E1B2461BECF25C0092D2BF /* Sources */,
 				47E1B2471BECF25C0092D2BF /* Frameworks */,
@@ -236,9 +236,9 @@
 			);
 			dependencies = (
 			);
-			name = HelloCone;
+			name = HelloOpenGLES;
 			productName = HelloCone;
-			productReference = 47E1B24A1BECF25C0092D2BF /* HelloCone.app */;
+			productReference = 47E1B24A1BECF25C0092D2BF /* HelloOpenGLES.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47E1B2451BECF25C0092D2BF /* Build configuration list for PBXProject "HelloCone" */;
+			buildConfigurationList = 47E1B2451BECF25C0092D2BF /* Build configuration list for PBXProject "HelloOpenGLES" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,7 +268,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47E1B2491BECF25C0092D2BF /* HelloCone */,
+				47E1B2491BECF25C0092D2BF /* HelloOpenGLES */,
 			);
 		};
 /* End PBXProject section */
@@ -422,7 +422,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.HelloCone;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelloOpenGLES;
 			};
 			name = Debug;
 		};
@@ -435,14 +435,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.HelloCone;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HelloOpenGLES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47E1B2451BECF25C0092D2BF /* Build configuration list for PBXProject "HelloCone" */ = {
+		47E1B2451BECF25C0092D2BF /* Build configuration list for PBXProject "HelloOpenGLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47E1B25F1BECF25C0092D2BF /* Debug */,
@@ -451,7 +451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47E1B2611BECF25C0092D2BF /* Build configuration list for PBXNativeTarget "HelloCone" */ = {
+		47E1B2611BECF25C0092D2BF /* Build configuration list for PBXNativeTarget "HelloOpenGLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47E1B2621BECF25C0092D2BF /* Debug */,
