@@ -15,7 +15,7 @@ typedef enum {
     GLES_VERSION_2
 } GLES_VERSION;
 
-@protocol LessonProtocol <NSObject>
+@protocol LessonProtocol <NSObject, OpenGLESViewDelegate>
 
 @required
 @property (nonatomic, strong) GLView *glView;

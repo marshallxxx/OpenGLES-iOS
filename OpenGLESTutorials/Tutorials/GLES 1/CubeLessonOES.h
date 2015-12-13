@@ -10,6 +10,6 @@
 #import "LessonProtocol.h"
 #import <OpenGLES/ES1/gl.h>
 
-@interface CubeLessonOES : NSObject <LessonProtocol, OpenGLESViewDelegate>
+@interface CubeLessonOES : NSObject <LessonProtocol>
 
 @end

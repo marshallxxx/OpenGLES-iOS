@@ -12,10 +12,13 @@
 #import "GLESTWOView.h"
 
 #import "CubeLessonOES.h"
+#import "LightingLesson.h"
+
 #import "SquareLesson.h"
 #import "CubeLesson.h"
 #import "CubeMotionRotationLesson.h"
 #import "CubeAnimation.h"
+#import "ParametricSurfaceRepresentation.h"
 
 @interface ViewController ()
 

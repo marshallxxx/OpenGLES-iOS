@@ -12,23 +12,6 @@
 #import "Matrix.hpp"
 #import "Quaternion.hpp"
 
-struct Animation {
-    float fromValue;
-    float toValue;
-    float currentValue;
-    float duration;
-    float timeElapsed;
-    BOOL animationStopped;
-};
-
-struct AnimationCircle {
-    float radius;
-    float currentValue;
-    float duration;
-    float timeElapsed;
-    BOOL animationStopped;
-};
-
 @implementation CubeAnimation {
     Animation rotationAnimation;
     AnimationCircle movingAnimation;

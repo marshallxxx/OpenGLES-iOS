@@ -58,6 +58,11 @@
 
 - (void)render:(CADisplayLink *) displayLink {
     if (self.delegate != nil) {
+        if ([self.delegate respondsToSelector:@selector(updateAnimation:)]) {
+            float elapsedSeconds = displayLink.timestamp - m_timestamp;
+            m_timestamp = displayLink.timestamp;
+            [self.delegate updateAnimation:elapsedSeconds];
+        }
         [self.delegate render];
     }
     

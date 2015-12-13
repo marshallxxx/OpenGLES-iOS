@@ -15,4 +15,6 @@
 //#define ACTIVELESSON SquareLesson
 //#define ACTIVELESSON CubeLesson
 //#define ACTIVELESSON CubeMotionRotationLesson
-#define ACTIVELESSON CubeAnimation
+//#define ACTIVELESSON CubeAnimation
+//#define ACTIVELESSON ParametricSurfaceRepresentation
+#define ACTIVELESSON LightingLesson
