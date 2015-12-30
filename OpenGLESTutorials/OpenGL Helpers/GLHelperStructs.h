@@ -9,8 +9,6 @@
 #ifndef GLHelperStructs_h
 #define GLHelperStructs_h
 
-
-
 typedef struct {
     float R;
     float G;

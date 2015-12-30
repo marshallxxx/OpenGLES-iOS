@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LessonProtocol.h"
 #import "GLHelperStructs.h"
+#import "LightningStruct.h"
 
 @interface ParametricSurfaceRepresentation : NSObject <LessonProtocol, OpenGLESViewDelegate> {
     GLuint programHandle;
@@ -16,6 +17,8 @@
     GLint colorAttribute;
     GLuint vertexBuffer;
     GLuint indexBuffer;
+    
+    ShaderLightValues lightValues;
     
     Animation rotationAnimation;
 }

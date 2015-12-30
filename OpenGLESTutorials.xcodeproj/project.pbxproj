@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F2600EE1C1D615500023B78 /* LightingLesson.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F2600ED1C1D615500023B78 /* LightingLesson.mm */; };
+		3F2600F01C1D9ECC00023B78 /* SimpleLighting.vert in Resources */ = {isa = PBXBuildFile; fileRef = 3F2600EF1C1D9ECC00023B78 /* SimpleLighting.vert */; };
 		3F2DC48A1C1C89DD005D439E /* GLESOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DC4841C1C89DD005D439E /* GLESOneView.m */; };
 		3F2DC48B1C1C89DD005D439E /* GLESTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DC4861C1C89DD005D439E /* GLESTwoView.m */; };
 		3F2DC48C1C1C89DD005D439E /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DC4891C1C89DD005D439E /* GLView.m */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		3F2600EC1C1D615500023B78 /* LightingLesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightingLesson.h; sourceTree = "<group>"; };
 		3F2600ED1C1D615500023B78 /* LightingLesson.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LightingLesson.mm; sourceTree = "<group>"; };
+		3F2600EF1C1D9ECC00023B78 /* SimpleLighting.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLighting.vert; sourceTree = "<group>"; };
 		3F2DC4831C1C89DD005D439E /* GLESOneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESOneView.h; sourceTree = "<group>"; };
 		3F2DC4841C1C89DD005D439E /* GLESOneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESOneView.m; sourceTree = "<group>"; };
 		3F2DC4851C1C89DD005D439E /* GLESTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESTwoView.h; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		3F2DC4961C1CC76C005D439E /* ParametricEquations.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParametricEquations.hpp; sourceTree = "<group>"; };
 		3F2DC4971C1CC795005D439E /* ParametricSurfaceRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParametricSurfaceRepresentation.h; sourceTree = "<group>"; };
 		3F2DC4981C1CC795005D439E /* ParametricSurfaceRepresentation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParametricSurfaceRepresentation.mm; sourceTree = "<group>"; };
+		3FEFCB6A1C1F6A32009ABD3C /* LightningStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningStruct.h; sourceTree = "<group>"; };
 		471977B91BF4B5E5000460CE /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
 		471977BA1BF4B5E5000460CE /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		471977BB1BF4B5E5000460CE /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 				47988C2E1BF20FED00309193 /* ShadersBuilder.m */,
 				47988C291BF20EBE00309193 /* Simple.vert */,
 				47988C2B1BF20EC500309193 /* Simple.frag */,
+				3F2600EF1C1D9ECC00023B78 /* SimpleLighting.vert */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -252,6 +256,7 @@
 				471977BB1BF4B5E5000460CE /* Vector.hpp */,
 				471977BF1BF4BE94000460CE /* GLHelperStructs.h */,
 				471977C91BF4DBB4000460CE /* GLHelperStructs.c */,
+				3FEFCB6A1C1F6A32009ABD3C /* LightningStruct.h */,
 			);
 			path = "OpenGL Helpers";
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				47988C2A1BF20EBE00309193 /* Simple.vert in Resources */,
 				47E1B25D1BECF25C0092D2BF /* LaunchScreen.storyboard in Resources */,
 				47E1B25A1BECF25C0092D2BF /* Assets.xcassets in Resources */,
+				3F2600F01C1D9ECC00023B78 /* SimpleLighting.vert in Resources */,
 				47E1B2581BECF25C0092D2BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

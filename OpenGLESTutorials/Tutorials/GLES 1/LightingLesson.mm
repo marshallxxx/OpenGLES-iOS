@@ -34,6 +34,7 @@
     // Initialize Lightning
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
+    glLightModelf(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
     
     [lesson setMatrices];
     [lesson initModels];

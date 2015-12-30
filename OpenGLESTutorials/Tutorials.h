@@ -9,6 +9,7 @@
 //------------------------OpenGL ES 1 Lessons
 
 //#define ACTIVELESSON CubeLessonOES
+//#define ACTIVELESSON LightingLesson
 
 //------------------------OpenGL ES 2 Lessons
 
@@ -16,5 +17,5 @@
 //#define ACTIVELESSON CubeLesson
 //#define ACTIVELESSON CubeMotionRotationLesson
 //#define ACTIVELESSON CubeAnimation
-//#define ACTIVELESSON ParametricSurfaceRepresentation
-#define ACTIVELESSON LightingLesson
+#define ACTIVELESSON ParametricSurfaceRepresentation
+
